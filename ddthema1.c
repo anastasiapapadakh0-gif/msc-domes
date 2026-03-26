@@ -12,14 +12,14 @@ int main() {
     float A[10], B[10], C[10];
     int i;
 
-    printf("eisagete 10 pragmatikous arithmous gia ton pinaka B:\n");
+    printf("Enter 10 real numbers for array B:\n");
     for (i = 1; i <= 10; i++) {
         float val;
         scanf("%f", &val);
         update(B, i, val);
     }
 
-    printf("eisagete 10 pragmatikous arithmous gia ton pinaka C:\n");
+    printf("Enter 10 real numbers for array C:\n");
     for (i = 1; i <= 10; i++) {
         float val;
         scanf("%f", &val);
@@ -31,7 +31,7 @@ int main() {
         update(A, i, sum);
     }
 
-    printf("\npinakas A (B + C):\n");
+    printf("\nArray A (B + C):\n");
     for (i = 1; i <= 10; i++) {
         printf("%.2f ", retrieve(A, i));
     }

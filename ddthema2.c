@@ -17,8 +17,8 @@ int main() {
     int d3 = u3 - l3 + 1;
     int d4 = u4 - l4 + 1;
 
-    printf("dieuthinseis stoixeiwn pinaka A(1:3, 1:2, 2:2, 1:2):\n");
-    printf("--------------------------------------------------\n");
+    printf("Memory Addresses of array A(1:3, 1:2, 2:2, 1:2)\n");
+    printf("-------------------------------------------------\n");
 
     // for για κάθε διάσταση
     for (int i1 = l1; i1 <= u1; i1++) {
@@ -26,17 +26,13 @@ int main() {
             for (int i3 = l3; i3 <= u3; i3++) {
                 for (int i4 = l4; i4 <= u4; i4++) {
                     
-                    
-                    
-                    
                     int offset = (i1 - l1) * (d2 * d3 * d4) + 
                                  (i2 - l2) * (d3 * d4) + 
                                  (i3 - l3) * d4 + 
                                  (i4 - l4);
                     
                     int address = b + (L * offset);
-
-                    printf("A(%d, %d, %d, %d) -> dieuthinsi: %d\n", i1, i2, i3, i4, address);
+                    printf("A(%d, %d, %d, %d) -> address: %d\n", i1, i2, i3, i4, address);
                 }
             }
         }
