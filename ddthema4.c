@@ -1,15 +1,15 @@
 #include <stdio.h>
-#define max 10 //οριζουμε το μέγιστο μέγεθος του stack
+#define ΜΑΧ 10 //οριζουμε το μέγιστο μέγεθος του stack
 
 struct stack
 {
-    int data[max];
+    int data[ΜΑΧ];
     int top; 
 };
 
 void push(struct stack *s) //προσθήκη στοιχείου στο stack
 {
-    if (s->top == max-1)
+    if (s->top == ΜΑΧ-1)
     {
         printf("Stack is full! Please remove an element before adding a new one.\n");
     }
