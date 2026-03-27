@@ -7,6 +7,11 @@ struct Node
     struct Node *next;
 };
 
+struct Stack
+{
+    struct Node *top;
+};
+
 void push(struct Stack *s) // προσθήκη στοιχείου στο stack
 {
     struct Node *newNode = (struct Node*) malloc(sizeof(struct Node));
